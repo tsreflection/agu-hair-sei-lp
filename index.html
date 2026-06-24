@@ -818,20 +818,17 @@ footer small{
 
   <!--
   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ▼ 動画を設置する場合：
-    src="your-video.mp4" を実際のファイルパスに変更してください
-    動画設置後は下の「デモ背景」div を削除してください
+  ▼ 動画設置済み
   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   -->
   <video
-    src=""
+    src="hero-video.mp4"
     autoplay muted loop playsinline
-    style="display:none"
+    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;"
   ></video>
-  <!-- ↑ src="" に動画パスを入れると自動的に表示されます -->
 
-  <!-- デモ背景（動画設置後は削除） -->
-  <div class="hero-demo">
+  <!-- デモ背景（動画設置済みのため非表示） -->
+  <div class="hero-demo" style="display:none">
     <svg viewBox="0 0 480 680" width="340" xmlns="http://www.w3.org/2000/svg" style="opacity:0.18;mix-blend-mode:screen;position:absolute;right:8%;bottom:0;height:90%">
       <ellipse cx="240" cy="200" rx="105" ry="120" fill="white"/>
       <path d="M135 200 Q138 90 240 60 Q342 90 345 200" fill="white"/>
